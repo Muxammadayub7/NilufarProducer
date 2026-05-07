@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilufar Producer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    .container {
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 17px;
+      padding-right: 17px
+    }
+
+    body {
+      background-color: #F1F1F1
+    }
+
+    .hero {
+      padding-top: 20px;
+      padding-bottom: 20px
+    }
+
+    .hero__title {
+      font-family: SFProDisplay, sans-serif;
+      font-weight: 700;
+      font-size: clamp(24px, 4vw, 30px);
+      line-height: 110.00000000000001%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 8px
+    }
+
+    .hero__title span {
+      color: #559A2D
+    }
+
+    .hero__text {
+      font-family: SFProDisplayRegular, sans-serif;
+      font-weight: 400;
+      font-size: clamp(15px, 4vw, 16px);
+      line-height: 120%;
+      text-align: center;
+      color: #5E5E5E;
+      margin-bottom: 24px
+    }
+
+    .logo {
+      max-width: 348px;
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex
+    }
+
+    .btn {
+      font-family: 'SFProDisplay', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      max-width: 337px;
+      width: 100%;
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -70px auto 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(180deg, #FF4135 0%, #D3291F 100%);
+      box-shadow: 0 4px 0 0 #A61911, inset 0 4px 4px 0 rgb(255 255 255 / .4), inset 0 -4px 4px 0 rgb(255 255 255 / .2), 0 10px 20px 0 rgb(211 41 31 / .3);
+      position: relative;
+      z-index: 11;
+      transition: all 0.2s ease
+    }
+
+    .btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 0 #A61911, inset 0 4px 4px 0 rgb(255 255 255 / .4)
+    }
+
+    .flex__row {
+      max-width: 244px;
+      width: 100%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+      position: relative
+    }
+
+    .flex__text {
+      font-family: SFProDisplayRegular, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      text-align: center
+    }
+
+    .arrow {
+      position: absolute;
+      right: -1px;
+      top: -24px
+    }
+
+    .info {
+      padding-top: 20px
+    }
+
+    .info__title {
+      font-family: PlayfairDisplayBold;
+      font-weight: 700;
+      font-size: clamp(27px, 4vw, 30px);
+      line-height: 130%;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+
+    .info__title span {
+      color: #559A2D;
+      font-style: italic;
+    }
+
+    .info__row {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 22px;
+      margin-bottom: 90px
+    }
+
+    .info__col {
+      max-width: 306px;
+      width: 100%;
+      background-color: #FFF;
+      padding: 16px 17px 14px 16px;
+      border-radius: 20px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .col_text {
+      font-family: SFProDisplayRegular;
+      font-size: clamp(12px, 4vw, 13px);
+      line-height: 130%;
+      text-align: center
+    }
+  </style>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero__container container">
+      <h2 class="hero__title">uy sharoitida <br> Farzandlaringizga <br> <span>professional masaj</span></h2>
+      <p class="hero__text">Uy sharoitida farzandlaringizga to'g'ri va <br> professional massaj qilish yo‘llarini
+        o‘rganing</p>
+      <div class="hero__inner">
+        <img src="./images/logo.avif" width="348" height="348" fetchpriority="high" decoding="async" alt="logo"
+          class="logo">
+        <button class="btn" id="open">Bepul qatnashish</button>
+      </div>
+      <div class="flex__row">
+        <p class="flex__text">Taqdimotda qatnashing</p>
+        <img src="./images/arrow.svg" width="61" height="60" loading="lazy" decoding="async" alt="arrow" class="arrow">
+      </div>
+
+      <div class="info">
+        <h2 class="info__title">
+          Onlayn darsda <br> <span>Nimalarni o'rganasiz?</span>
+        </h2>
+        <div class="info__row">
+          <div class="info__col">
+            <img src="./images/info__img__1.avif" width="273" height="160" loading="lazy" decoding="async" alt="img__1"
+              style="height: auto; margin-bottom: 10px;">
+            <p class="col_text">Farzandingiz <b>oyoq va qo‘l panjalarini</b> <br>
+              to‘g‘ri massaj qilishni o‘rganasiz</p>
+          </div>
+          <div class="info__col">
+            <img src="./images/info__img__2.avif" width="273" height="160" loading="lazy" decoding="async" alt="img__1"
+              style="height: auto; margin-bottom: 10px;">
+            <p class="col_text"><b>Uy sharoitida</b> ilk muammolarni vaqtida <br> sezish to‘g‘risida tavsiyalar olasiz
+            </p>
+          </div>
+          <div class="info__col">
+            <img src="./images/info__img__3.avif" width="273" height="160" loading="lazy" decoding="async" alt="img__1"
+              style="height: auto; margin-bottom: 10px;">
+            <p class="col_text">Tajribali massajistdan farzandingiz <b>salomatligini <br> to‘g‘ri nazorat qilishni</b>
+              o‘rganasiz</p>
+          </div>
+        </div>
+        <button class="btn" id="open">Bepul qatnashish</button>
+        <div class="flex__row">
+          <p class="flex__text">Taqdimotda qatnashing</p>
+          <img src="./images/arrow.svg" width="61" height="60" loading="lazy" decoding="async" alt="arrow"
+            class="arrow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+        </div>
+
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <button type="button" class="selected-country" id="selectedCountry">
+              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+            <div class="phone-field" style="flex: 1;">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+            </div>
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
+      </form>
+    </div>
+  </div>
+
+  <script defer src="./js/phoneFormatter.js"></script>
+  <script defer src="./js/app.js"></script>
+
+</body>
+
+</html>
